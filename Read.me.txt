@@ -1,0 +1,22 @@
+# 🤖 AI-Powered News-Driven Trading Bot (GPT-4o)
+
+This project instantly analyzes cryptocurrency news received via Telegram using the **OpenAI GPT-4o** model and automatically executes positions in the **Binance Futures** market based on the sentiment analysis.
+
+## 🌟 Features
+- **AI Sentiment Analysis:** Scores news on a scale of 1-10 and decides between LONG/SHORT positions.
+- **Dynamic Position Sizing:** Automatically calculates the quantity based on the current market price and a fixed USDT amount.
+- **Secure Architecture:** API keys are managed via a `.env` file to keep credentials out of the source code.
+- **Manual Test Mode:** Allows testing the bot's reaction to custom news inputs via the console without needing a live Telegram message.
+
+## 🛠 Setup and Installation
+
+### Step 1: Install Dependencies
+Run the following command in your terminal or CMD to install the required libraries:
+```bash
+pip install -r requirements.txt
+Step 2: Configure API Keys
+BINANCE_API_KEY=your_binance_key
+BINANCE_API_SECRET=your_binance_secret
+OPENAI_API_KEY=your_openai_key
+TELEGRAM_API_ID=your_telegram_id
+TELEGRAM_API_HASH=your_telegram_hash
